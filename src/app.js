@@ -30,7 +30,7 @@ function submitPost(){
   }
 
   http.post('http://localhost:3000/posts',data)
-  .then(data => 
+  .then(_data => 
       getPosts(),
       ui.showAlerts("Post added", "alert alert-success"),
       ui.clearFields()
@@ -38,3 +38,23 @@ function submitPost(){
   .catch(err => console.log(err));
 }
 
+
+// DOM for delete
+const removePost = document.querySelector('#posts');
+removePost.addEventListener('click',deletePost);
+
+function deletePost(e){
+  e.preventDefault();
+
+  if(e.target.parentElement.classList.contains('delete')){
+    const id = e.target.parentElement.dataset.id;
+    if(confirm('Are you surely want to delete the post')){
+      http.delete(`http://localhost:3000/posts/${id}`)
+      .then(_data => 
+          getPosts(),
+          ui.showAlerts("Post deleted", "alert alert-success")
+        )
+      .catch(err => console.log(err))
+    }
+  };
+}

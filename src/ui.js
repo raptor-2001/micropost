@@ -21,7 +21,6 @@ class UI{
         <a href="#" class="edit card-link" data-id="${post.id}">
         <i class="fa fa-pencil"></i>
         </a>
-
         <a href="#" class="delete card-link" data-id="${post.id}">
         <i class="fa fa-trash"></i>
       </a>

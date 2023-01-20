@@ -11,11 +11,6 @@
       "body": "This is post two"
     },
     {
-      "id": 3,
-      "title": "Post Three",
-      "body": "This is post three"
-    },
-    {
       "title": "Post Four",
       "body": "This is post four",
       "id": 4
@@ -59,21 +54,6 @@
       "title": "Post Eleven",
       "body": "This is post eleven",
       "id": 12
-    },
-    {
-      "title": "Post Twelve",
-      "body": "This is post twelve",
-      "id": 13
-    },
-    {
-      "title": "Post Thirteen",
-      "body": "This is post thirteen",
-      "id": 14
-    },
-    {
-      "title": "Post fourteen",
-      "body": "This is post fourteen",
-      "id": 15
     }
   ]
 }
