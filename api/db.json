@@ -1,9 +1,9 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Post One",
-      "body": "This is post one"
+      "title": "Post 1",
+      "body": "This is post 1",
+      "id": 1
     },
     {
       "id": 2,
@@ -24,36 +24,6 @@
       "title": "Post Five",
       "body": "This is post five",
       "id": 6
-    },
-    {
-      "title": "Post Six",
-      "body": "This is post six",
-      "id": 7
-    },
-    {
-      "title": "Post Seven",
-      "body": "This is post seven",
-      "id": 8
-    },
-    {
-      "title": "Post Eight",
-      "body": "This is post eight",
-      "id": 9
-    },
-    {
-      "title": "Post Nine",
-      "body": "This is post nine",
-      "id": 10
-    },
-    {
-      "title": "Post Ten",
-      "body": "This is post ten",
-      "id": 11
-    },
-    {
-      "title": "Post Eleven",
-      "body": "This is post eleven",
-      "id": 12
     }
   ]
 }

@@ -74,6 +74,58 @@ class UI{
      this.titleInput.value = "";
 
   }
+  clearId(){
+
+     this.idInput.value = "";
+  }
+
+  fillForm(data){
+
+      this.idInput.value = data.id;
+      this.titleInput.value = data.title;
+      this.bodyInput.value = data.body;
+
+      this.createButton('edit');
+  }
+
+  createButton(type){
+
+      if(document.querySelector('.post-cancel')){
+        document.querySelector('.post-cancel').remove();
+      }
+      if(type === 'edit'){
+
+        this.postSubmit.textContent = 'Update It';
+        this.postSubmit.className = 'post-submit btn btn-warning';
+        
+        // cancel button
+        const button = document.createElement('button');
+        button.className = 'post-cancel btn btn-block btn-light mt-3';
+        button.appendChild(document.createTextNode('Cancel Edit'));
+
+        // Parent
+        const form = document.querySelector('.card-form');
+        
+        // beforeElement
+        const formEnd = document.querySelector('.form-end');
+
+        form.insertBefore(button,formEnd);
+
+
+      }else{
+
+        this.postSubmit.textContent = 'Post It';
+        this.postSubmit.className = 'post-submit btn btn-primary';
+
+        if(document.querySelector('.post-cancel')){
+          document.querySelector('.post-cancel').remove();
+        }
+
+        this.clearFields();
+        this.clearId();
+
+      }
+  }
 }
 
 export const ui = new UI();
